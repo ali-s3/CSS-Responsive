@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.google.com/specimen/Montserrat');
+}
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('https://fonts.google.com/specimen/Fraunces');
+}
+
+* {
+    font-family: 'Fraunces';
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+}
+
+button:hover {
+    /* background-color: hsl(158, 36%, 37%); */
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* styling main content */
+.main {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.main_inner {
+    border-radius: 5px;
+    background-color: hsl(30, 38%, 92%);
+    padding: 50px;
+}
+
+.main_inner_content {
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    padding: 0;
+    height: 450px;
+    align-content: stretch;
+    /* flex-direction: column; */
+}
+
+@media (min-width: 970px) {
+    .main {
+        padding: 50px 300px;
+    }
+
+    .main_inner_content_side-photo {
+        width: 50%;
+    }
+
+    .main_inner_content_side-photo img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .main_inner_content_side-text {
+        padding: 30px 0px;
+        width: 50%;
+        margin-left: 30px;
+    }
+}
+
+.side-text_info-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.side-text_info-list>*:not(:last-child) {
+    /* margin-top: 20px; */
+}
+
+.product-brand {
+    font-family: 'Montserrat';
+    /* font-weight: 700; */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    border: 0px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.product-price h1 {
+    display: inline;
+}
+
+.product-price>.before-off-price {
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
